@@ -23,7 +23,7 @@ public class Main {
         hospitalThread.start();
 
         for (int i = 0; i < 10; i++) {
-            Patient patient = new Patient(new Random().nextInt(5000));
+            Patient patient = new Patient(i);
             hospital.addPatient(patient);
             try {
                 Thread.sleep(1000);

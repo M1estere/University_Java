@@ -14,7 +14,7 @@ public class Patient implements Runnable {
 
     @Override
     public void run() {
-        System.out.println(String.format("Patient %d is waiting for terapeut", id));
+        System.out.println(String.format("Patient %d is attending therapist", id));
     }
 
 }
